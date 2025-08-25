@@ -11,7 +11,10 @@ You can run the template against a single target or a list of targets.
 To scan a single URL, use the following command:
 
 ```bash
+
 nuclei -u https://your-target.com -t backup-file-finder.yaml
+
+nuclei -u https://yourtarget.com -t backup-file-finder.yaml
 ```
 
 ### List of Targets
@@ -31,3 +34,6 @@ Backup files can inadvertently expose sensitive information. They might contain:
 -   Older, vulnerable versions of an application
 
 Finding these files can provide critical insights for security assessments.
+=======
+nuclei -l yourtargetlist.txt -t backup-file-finder.yaml
+    
